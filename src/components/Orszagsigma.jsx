@@ -1,4 +1,5 @@
 import "../components/Orszagsigma.css"
+import Spinner from "./all/New"
 import { useEffect, useState } from "react"
 export default function Orszagsigma(){
     const [orszag,setOrszag] = useState([])
@@ -18,7 +19,7 @@ export default function Orszagsigma(){
         <h1>Ország Információ</h1>
         <input type="text" placeholder="keresés" id="kereso" value={kereso} onChange={(e) => setKereso(e.target.value)}></input>
         <div id="fodiv">
-            {betolt ? ( <p>Betöltés folyamatban <img id="tolt" src="https://media.tenor.com/UnFx-k_lSckAAAAM/amalie-steiness.gif"></img></p>) :
+            {betolt ? ( <p>Betöltés folyamatban <Spinner/></p>) :
             (orszagfilter.map((orszagok, index) =>(
                 <div className="orszag_div" key={index}><img src={orszagok.flags.png}></img>{orszagok.name.official}<br/> {orszagok.capital}<br/> {orszagok.region} </div>
             )))}
