@@ -1,11 +1,11 @@
 import "..//all/New.css"
+import { Spinner  } from "react-bootstrap";
+import 'bootstrap/dist/css/bootstrap.min.css';
 
-const Spinner =  () => {
+const Spinner2 =  () => {
     return (
-        <div className="spinner_container">
-            <div className="loading_spinner"></div>
-        </div>
+        <Spinner animation="border"/>
     )
 }
 
-export default Spinner;
+export default Spinner2; 
