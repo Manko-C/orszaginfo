@@ -1,9 +1,13 @@
-import LoadingSpinner from './components/loadingspinner/LoadingSpinner';
+import BasicExample from './components/loadingspinner/LoadingSpinner';
+import Carousels from './components/reactbootstrap/carousels';
 import './App.css';
 
 function App() {
   return (
-    <LoadingSpinner />
+    <>
+    <BasicExample />
+    <Carousels />
+    </>
   );
 }
 
